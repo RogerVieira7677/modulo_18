@@ -1,0 +1,49 @@
+.home-container{
+    //background: url("../img/home-img.jpg");
+    // height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Para que o conteúdo overlay possa ser posicionado dentro desse contêiner */
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    ::selection{
+        display: flex;
+        align-items: center;
+        height: min-content 100vh;
+    }
+}
+
+.content{
+    position: absolute; /* Posiciona o conteúdo sobre a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50px; /* Afasta da margem esquerda */
+    transform: translateY(-50%); /* Ajuste para garantir a centralização vertical */
+    color: @CorFont;
+    max-width: 500px; /* Limita a largura do texto */
+    
+    h3{
+        color: @CorFont;
+        font-size: 3rem; /* Tamanho grande do título */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    p{
+            color: @CorFont;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            padding: 10px 0;
+    }
+    .btn {
+        background-color: @CorPrincipal;
+        color: @CorFont;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+}

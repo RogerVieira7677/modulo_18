@@ -1,0 +1,41 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: @CorBorda;
+    background-color: @CorBg;
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .navbar{
+        a{
+        margin: 0 1rem;
+        font-size: 1.8rem;
+        color: @CorFont;
+        &:hover{
+            color: @CorPrincipal;
+            border-bottom: 0.1rem solid @CorPrincipal;
+            padding-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        }
+    }
+}
+
+.icons img{
+    margin: 1rem;
+    cursor: pointer;
+
+    &:hover{
+        width: 40px;
+        height: 40px;
+    }
+}
